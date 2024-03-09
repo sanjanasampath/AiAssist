@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Registration Page</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- icheck bootstrap -->
+  <link rel="stylesheet" href="../../plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+  <!-- BS Stepper -->
+  <link rel="stylesheet" href="../../plugins/bs-stepper/css/bs-stepper.min.css">
+</head>
+<body class="hold-transition layout-top-nav">
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand-md navbar-dark navbar-pink">
+      <div class="container">
+        <a href="#" class="navbar-brand">
+          <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+          <span class="brand-text font-weight-light">C3 TECH</span>
+        </a>
+
+        <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse order-3" id="navbarCollapse">
+          <!-- Left navbar links -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+          </ul>
+
+          <!-- SEARCH FORM -->
+          <form class="form-inline ml-0 ml-md-3">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+        
+        <!-- Right navbar links -->
+        <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Employer Sign-up</a>
+            </li>
+            <li class="nav-item">
+              <a href="./register.html" class="nav-link">Job Seeker Registration</a>
+            </li>
+            <li class="nav-item">
+              <button type="submit" class="btn btn-light"><a href="../examples/login.html" class="text-fuchsia">Login</a></button>
+
+            </li>
+          </ul>
+        
+        </ul>
+      </div>
+    </nav>
+    <!-- /.navbar -->
+    <div class="content-wrapper">
+      <section class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            
+          </div>
+        </div><!-- /.container-fluid -->
+      </section>
+
+      <section class="content">
+        <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <div class="card card-default">
+              <div class="card-header">
+                <p class="login-logo text-fuchsia">Register as an Employer</p>
+              </div>
+              <div class="card-body p-0">
+                <div class="bs-stepper">
+                  <div class="bs-stepper-header" role="tablist">
+                    <!-- your steps here -->
+                    <div class="step" data-target="#login-part">
+                      <button type="button" class="step-trigger" role="tab" aria-controls="logins-part" id="logins-part-trigger">
+                        <span class="bs-stepper-circle navbar-fuchsia">1</span>
+                        <span class="bs-stepper-label">Company Details</span>
+                      </button>
+                    </div>
+                    <div class="line"></div>
+                    <div class="step" data-target="#skills-part">
+                      <button type="button" class="step-trigger" role="tab" aria-controls="information-part" id="information-part-trigger">
+                        <span class="bs-stepper-circle">2</span>
+                        <span class="bs-stepper-label">Login Details</span>
+                      </button>
+                    </div>
+                    <div class="line"></div>
+                    <div class="step" data-target="#employment-information-part">
+                      <button type="button" class="step-trigger" role="tab" aria-controls="information-part" id="information-part-trigger">
+                        <span class="bs-stepper-circle">3</span>
+                        <span class="bs-stepper-label">Subscription Details</span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="bs-stepper-content">
+                    <!-- your steps content here -->
+                    <div id="login-part" class="content" role="tabpanel" aria-labelledby="logins-part-trigger">
+                      <div class="form-group">
+                        <label for="exampleInputEmail1" class="text-fuchsia">Company Name</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Company Name">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1" class="text-fuchsia">Website</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Gender">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1" class="text-fuchsia">Country</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Country">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1" class="text-fuchsia">State</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="State">
+                      </div>
+                      <button class="btn navbar-fuchsia" onclick="stepper.next()">Next</button>
+                    </div>
+                    <div id="skills-part" class="content" role="tabpanel" aria-labelledby="information-part-trigger">
+                      <div class="form-group">
+                        <label for="exampleInputEmail1" class="text-fuchsia">Contact Person Name</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Contact Person Name">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputEmail1" class="text-fuchsia">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1" class="text-fuchsia">Phone Number</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Phone Number">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1" class="text-fuchsia">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                      </div>
+                      <div class="form-group">
+                        <label for="exampleInputPassword1" class="text-fuchsia">Confirm Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Re-type Password">
+                      </div>
+                      <button class="btn navbar-fuchsia" onclick="stepper.previous()">Previous</button>
+                      <button type="submit" class="btn navbar-fuchsia" onclick="stepper.next()">Next</button>
+                    </div>
+                    <div id="employment-information-part" class="content" role="tabpanel" aria-labelledby="information-part-trigger">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <!-- Widget: silver -->
+                          <div class="card card-widget widget-user-2">
+                            <!-- Add the bg color to the header using any of the bg-* classes -->
+                            <div class="widget-user-header bg-info">
+                              <!-- <div class="widget-user-image">
+                                <img class="img-circle elevation-2" src="../dist/img/user7-128x128.jpg" alt="User Avatar">
+                              </div> -->
+                              <!-- /.widget-user-image -->
+                              <h5 class="login-logo">SILVER</h5>
+                              <!-- <h5 class="widget-user-desc">Basic</h5> -->
+                            </div>
+                            <div class="card-footer p-0">
+                              <ul class="nav flex-column">
+                                <li class="nav-item">
+                                  <a href="#" class="nav-link text-fuchsia">
+                                    Access to 50 profiles per month <span class="float-right badge bg-primary"></span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a href="#" class="nav-link text-fuchsia">
+                                    5 Preliminary AI Interviews per month<span class="float-right badge bg-info"></span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a href="#" class="nav-link text-fuchsia">
+                                    Scheduling assistant to schedule 2 interviews per month <span class="float-right badge bg-success"></span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a href="#" class="nav-link text-fuchsia">
+                                    No Lifetime access <span class="float-right badge bg-danger"></span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <!-- /.widget-user -->
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-md-4">
+                          <!-- Widget: gold -->
+                          <div class="card card-widget widget-user-2">
+                            <!-- Add the bg color to the header using any of the bg-* classes -->
+                            <div class="widget-user-header bg-warning">
+                              <!-- <div class="widget-user-image">
+                                <img class="img-circle elevation-2" src="../dist/img/user7-128x128.jpg" alt="User Avatar">
+                              </div> -->
+                              <!-- /.widget-user-image -->
+                              <h3 class="login-logo">GOLD</h3>
+                              <!-- <h5 class="widget-user-desc">Advanced</h5> -->
+                            </div>
+                            <div class="card-footer p-0">
+                              <ul class="nav flex-column">
+                                <li class="nav-item">
+                                  <a href="#" class="nav-link text-fuchsia">
+                                    Access to 500 profiles per month <span class="float-right badge bg-primary"></span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a href="#" class="nav-link text-fuchsia">
+                                    50 Preliminary AI Interviews per month<span class="float-right badge bg-info"></span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a href="#" class="nav-link text-fuchsia">
+                                    Scheduling assistant to schedule 20 interviews per month <span class="float-right badge bg-success"></span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a href="#" class="nav-link text-fuchsia">
+                                    Lifetime access <span class="float-right badge bg-danger"></span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <!-- /.widget-user -->
+                        </div>
+                        <!-- /.col -->
+                        <div class="col-md-4">
+                          <!-- Widget: platinum -->
+                          <div class="card card-widget widget-user-2">
+                            <!-- Add the bg color to the header using any of the bg-* classes -->
+                            <div class="widget-user-header bg-white">
+                              <!-- <div class="widget-user-image">
+                                <img class="img-circle elevation-2" src="../dist/img/user7-128x128.jpg" alt="User Avatar">
+                              </div> -->
+                              <!-- /.widget-user-image -->
+                              <h3 class="login-logo">PLATINUM</h3>
+                              <!-- <h5 class="widget-user-desc">Pro</h5> -->
+                            </div>
+                            <div class="card-footer p-0">
+                              <ul class="nav flex-column">
+                                <li class="nav-item">
+                                  <a href="#" class="nav-link text-fuchsia">
+                                    Access to unlimited profiles <span class="float-right badge bg-primary"></span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a href="#" class="nav-link text-fuchsia">
+                                    Unlimited Preliminary AI Interviews<span class="float-right badge bg-info"></span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a href="#" class="nav-link text-fuchsia">
+                                    Unlimited Interview schedules with Scheduling assistant <span class="float-right badge bg-success"></span>
+                                  </a>
+                                </li>
+                                <li class="nav-item">
+                                  <a href="#" class="nav-link text-fuchsia">
+                                    Lifetime access <span class="float-right badge bg-danger"></span>
+                                  </a>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                          <!-- /.widget-user -->
+                        </div>
+                        <!-- /.col -->
+                      </div>
+                      
+                      <button class="btn navbar-fuchsia" onclick="stepper.previous()">Previous</button>
+                      <button type="submit" class="btn navbar-fuchsia">Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- /.card-body -->
+              <div class="card-footer">
+              </div>
+            </div>
+            <!-- /.card -->
+          </div>
+        </div>
+      </div>
+    </section>
+</div>
+    <!-- <div class="register-page">
+      <div class="register-box">
+        <div class="card">
+          <div class="card-body register-card-body">
+            <p class="register-logo text-fuchsia">Register as a Jobseeker</p>
+
+            <form action="" method="post">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Full name">
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="fas fa-user"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="input-group mb-3">
+                <input type="email" class="form-control" placeholder="Email">
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="fas fa-envelope"></span>
+                  </div>
+                </div>
+              </div>
+             
+              <div class="input-group mb-3">
+                <input type="password" class="form-control" placeholder="Password">
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="fas fa-lock"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="input-group mb-3">
+                <input type="password" class="form-control" placeholder="Retype password">
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <span class="fas fa-lock"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-8">
+                  <div class="icheck-fuchsia text-fuchsia">
+                    <input type="checkbox" id="agreeTerms" name="terms" value="agree">
+                    <label for="agreeTerms">
+                    I agree to the <a href="#" class="text-fuchsia">terms</a>
+                    </label>
+                  </div>
+                </div>
+                <div class="col-4">
+                  <button type="submit" class="btn btn-block navbar-fuchsia">Register</button>
+                </div>
+              </div>
+            </form>
+
+            <a href="login.html" class="text-center text-fuchsia">I already have a membership</a>
+          </div>
+        </div>
+      </div>
+    </div> -->
+  <!-- /.register-box -->
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2024 C3 TECH.</strong> All rights reserved.
+  </footer>
+  </div>
+<!-- jQuery -->
+<script src="../../plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="../../dist/js/adminlte.min.js"></script>
+<!-- BS-Stepper -->
+<script src="../../plugins/bs-stepper/js/bs-stepper.min.js"></script>
+<script>
+  // BS-Stepper Init
+  document.addEventListener('DOMContentLoaded', function () {
+    window.stepper = new Stepper(document.querySelector('.bs-stepper'))
+  })
+</script>
+</body>
+</html>
